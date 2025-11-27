@@ -8,10 +8,10 @@ else:
     weight = 56
     height = 160  
 
-bmi = weight / (height_m ** 2)
+bmi = weight / (height ** 2)
 
 print("Weight:", weight, "kg")
-print("Height:", height_m, "m")
+print("Height:", height, "m")
 print("BMI:", round(bmi, 1))
 
 if bmi < 18.5:
