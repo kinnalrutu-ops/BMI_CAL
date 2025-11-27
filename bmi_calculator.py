@@ -1,11 +1,17 @@
+import sys
+if len(sys.argv) == 3:
+    script_name = sys.argv[0]
+    weight = float(sys.argv[1])
+    height = float(sys.argv[2])
+else:
+    script_name = "new"
+    weight = 56
+    height = 160  
 
-weight = float(input("Enter weight (in kg): "))
-height = float(input("Enter height (in meters): "))
-
-bmi = weight / (height ** 2)
+bmi = weight / (height_m ** 2)
 
 print("Weight:", weight, "kg")
-print("Height:", height, "m")
+print("Height:", height_m, "m")
 print("BMI:", round(bmi, 1))
 
 if bmi < 18.5:
